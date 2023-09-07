@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/create.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/users.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/create.css">
+    <link rel="stylesheet" href="css/reports.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <title>Login || TODO - LIST || A To-Do List to Organize Your Work & Life</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section ------------------------------------------------------------------------- -->
+        <aside>
+            <div class="toggle-sidebar">
+                <div class="logo">
+                    <img src="images/logo.png">
+                    <h2 class="aside-heading">TODO-<span class="danger">LIST</span></h2> 
+                </div>
+                <div class="btn-sidebar">
+                    <span class="material-icons-sharp" id="btn-sidebar">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#" id="btnpage1">
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3 class="aside-heading">Users</h3>
+                </a>
+                <a href="#" id="btnpage2">
+                    <span class="material-symbols-outlined">
+                        calendar_view_month
+                    </span>
+                    <h3 class="aside-heading">Calendar</h3>
+                </a>
+                <a href="#" id="btnpage3">
+                    <span class="material-icons-sharp">
+                        home
+                    </span>
+                    <h3 class="aside-heading">Home</h3>
+                </a>
+                <a href="#" id="btnpage4">
+                    <span class="material-icons-sharp">
+                        notifications
+                    </span>
+                    <h3 class="aside-heading">Create Notifications</h3>
+                </a>
+                <a href="#" id="btnpage5">
+                    <span class="material-icons-sharp">
+                        report_gmailerrorred
+                    </span>
+                    <h3 class="aside-heading">Reports</h3>
+                </a>
+                <a href="#" id="btnpage6">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3 class="aside-heading">Settings</h3>
+                </a>
+                <a href="#" id="btn-logout">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3 class="aside-heading">Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -------------------------------------------------------------------- -->
+
+        <!-- Main Content ----------------------------------------------------------------------------- -->
+        <main>
+            <!-- Page Users -->
+            <div id="page1">
+                <h1>Users</h1>
+                <div class="profile">
+                    <div class="photo">
+                        <img src="images/dehya.jpg">
+                    </div>
+
+                    <div class="content">
+                        <h2>Name:</h2>
+                        <h3>Dehya</h3>
+                        <h2>Email:</h2>
+                        <h3>26lpc122002@gmail.com</h3>
+                        <h2>Age:</h2>
+                        <h3>20</h3>
+                        <h2></h2>
+                    </div>
+                </div>
+            </div>
+            <!-- End of page users -->
+
+            <!-- Page Calendar -->
+            <div id="page2">
+                <h1>Calendar</h1>
+                <div class="calendar">
+                    <div class="header">
+                        <div class="month"></div>
+                        <div class="btns">
+                            <div class="btn today-btn">
+                                <i class="fas fa-calendar-day"></i>
+                            </div>
+                            
+                            <div class="btn prev-btn">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                            <div class="btn next-btn">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="weekdays">
+                        <div class="day">Sun</div>
+                        <div class="day">Mon</div>
+                        <div class="day">Tue</div>
+                        <div class="day">Wed</div>
+                        <div class="day">Thu</div>
+                        <div class="day">Fri</div>
+                        <div class="day">Sat</div>
+                    </div>
+                    <div class="days">
+                    <!-- lets add days using js -->
+                    </div>
+                </div>
+            </div>
+            <!-- End of page calendar -->
+            
+            <!-- Page-home -->
+            <div id="page3">
+                <h1>Home</h1>
+                <h2>Up Coming</h2>
+
+                <div class="upcoming">
+                    <div class="upcoming-infor">
+                        <!-- <span class="upcoming-priority important"> <h3>Important</h3></span> -->
+                        <span class="upcoming-name"> <h3>Play game</h3></span>
+                    </div>
+                    <span class="upcoming-time"><h3>22:00</h3></span>
+                </div>
+
+                <h2>Line Up</h2>
+                <ul class="task-list"></ul>
+                <div class="add-tast">
+                    <span class="material-icons-sharp">
+                        add
+                    </span>
+                    <h3>Add your tasks here</h3>
+                </div>
+            </div>
+            <!-- End of page home -->
+           
+            <!-- Page create notification -->
+            <div id="page4">
+                <h1>Create Notification</h1>
+                <div class="createNoti">
+                    <div>
+                        <h2>Name:</h2>
+                        <input id="create-name" type="text" placeholder="Name">
+                    </div>
+                    
+                    <div>
+                        <h2>Color:</h2>
+                        <input id="create-color" type="color" style="width: 30px;">
+                    </div>
+
+                    <div>
+                        <h2>Mode:</h2>
+                        <select id="modePlay">
+                            <option value="modePlay1">Play music</option>
+                            <option value="modePlay2">Text to speech</option>
+                        </select>
+                        <input id="input-mp1" type="text" placeholder="File mp3/wav/...">
+                    </div>
+
+                    <textarea id="input-mp2" maxlength="200" placeholder="Massage content"></textarea>
+                    
+                    <div>
+                        <h2>Time:</h2>
+                        <select id="modeTime">
+                            <option value="modeTime1">Every week</option>
+                            <option value="modeTime2">One time</option>
+                        </select> 
+                        <input id="input-mt2" type="datetime-local"> 
+                    </div>
+                        
+                    <div id="input-mt1">
+                        <h3 id="t2">2</h3>
+                        <h3 id="t3">3</h3>
+                        <h3 id="t4">4</h3>
+                        <h3 id="t5">5</h3>
+                        <h3 id="t6">6</h3>
+                        <h3 id="t7">7</h3>
+                        <h3 id="t8">8</h3>
+                        <input type="time">
+                    </div> 
+                    
+                    <div class="create-btn">
+                        <input id="reset" type="reset" value="Reset">
+                        <input id="finish" type="button" value="Finish">
+                    </div>
+                </div>
+            </div>
+        <!-- Page Reports -->
+            <div id="page5">
+                <h1>Reports</h1>
+                <div class="reports">
+                    
+                </div>
+            </div>
+
+        <!-- End of page reports-->
+
+        <!-- Page Reports -->
+            <div id="page6">
+                <h1>Settings</h1>
+                <div class="settings">
+                    <div class="content">
+                        <h2>Your account: <u style="color: var(--color-primary); text-decoration: blink;">Dehya</u></h2>
+                        <h2>Wifi:</h2>
+                        <h3>Dehya 5G</h3>
+                        <h2>Bluetooth:</h2>
+                        <h3>Connected</h3>
+                        <h2>Devices:</h2>
+                        <h3>Acer Nitro 5</h3>
+                        <h2>Volumes:</h2>
+                        <div class="slidecontainer">
+                            <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+                            <p style="font-size: 20px; font-weight: 800; font-style: italic; text-align: center;">Value: <span id="demo"></span></p>
+                        </div>
+                        <h2>Battery: <b class="battery-percent">79%</b></h2>
+                    </div>
+                </div>
+            </div>
+        <!-- End of page reports-->
+        </main>
+        
+        <!-- End of Main Content ----------------------------------------------------------------------- -->
+
+        <!-- right-section ----------------------------------------------------------------------------- -->
+        <div class="right-section">
+            <div class="nav">
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Dehya</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="images/dehya.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="todo-profile">
+                <div class="photo">
+                    <img src="images/logo.png">
+                </div>
+                <h2>ToDo-List</h2>
+                <h3>Unlock Your Productivity with Todo List!</h3>
+            </div>
+
+            <div class="date-clock">
+                <span class="date"></span>
+                <div class="clock"></div>
+            </div>
+        </div>
+        <!-- right-section ----------------------------------------------------------------------------- -->
+
+    </div>
+
+    <!-- footer----------------------------------------------------------------------------------------- -->
+    <footer>
+        <h1>Project 2</h1>
+        <div>
+            <ul>
+                <li>Name: Nguyễn Võ Phương Thảo</li>
+                <li>Code: 20119029</li>
+                <li>Phone number: 0896642847</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Name: Lê Phú Cường</li>
+                <li>Code: 20119203</li>
+                <li>Phone number: 0375545351</li>
+            </ul>
+        </div>
+    </footer>
+    <!-- End of footer---------------------------------------------------------------------------------- -->
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script> 
+    <script src="todo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:ital,wght@0,300;0,400;0,600;1,400;1,700;1,800&display=swap');
+
+#page4 .createNoti{
+    display: grid;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+    font-family: 'Playfair Display', serif;
+}
+#page4 .createNoti >div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+#page4 .createNoti textarea{
+    display: none;
+    width: auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+    border: 2px;
+    padding: 10px;
+    border-style: outset;
+    background-color:rgba(255, 255, 255, 0);
+    color: var(--color-dark);
+}
+#page4 .createNoti h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#page4 .createNoti h3{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 1.5px solid ;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+#page4 .createNoti .active{
+    background-color: var(--color-primary);
+}
+#page4 .createNoti input{
+    width: auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    background-color:rgba(255, 255, 255, 0);
+    color: var(--color-dark);
+    font-family: 'Playfair Display', serif;
+}
+#page4 .createNoti select{
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color:rgba(255, 255, 255, 0);
+    color: var(--color-dark);
+    font-family: 'Playfair Display', serif;
+}
+#page4 .createNoti .create-btn{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#page4 .createNoti .create-btn input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1.5px solid var(--color-dark);
+    border-radius: var(--border-radius-1);
+}
+#page4 .createNoti .create-btn input:hover{
+    background-color: var(--color-primary);
+    cursor: pointer;
+}
+#input-mt1{
+    justify-content: center;
+}
+
+#input-mt2{
+    display: none;
+    background-color: var(--color-primary);
+}

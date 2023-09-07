@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --color-primary: #EE6363;
+    --color-danger: #CD5555;
+    /* --color-success: #1B9C85; */
+    /* --color-warning: #F7D060; */
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.dark-mode-variables{
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--color-dark);
+}  
+
+a{
+    color: var(--color-dark);
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+u {
+    text-decoration: none;
+    color: var(--color-danger);
+}
+
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+h3{
+    font-weight: 500;
+    font-size: 0.87rem;
+}
+
+header{
+    display: flex;
+    margin: 2rem;
+}
+header >div:hover{
+    box-shadow: none;
+}
+header .logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+}
+header .logo img{
+    width: 5rem;
+    height: auto;
+}
+header .sign-up{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+header .sign-up h2{
+    padding: 0.8rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    background-color: #CD5C5C;
+    color: white;
+}
+header .sign-up h2:hover{
+    padding: 1rem;
+    cursor: wait;
+}
+aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.danger{
+    color: var(--color-danger);
+}
+.login{
+    display:grid;
+    gap: 1rem;
+    padding: 3rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    background-color: white;
+}
+.login .box-input{
+    display: flex;
+    width: 20rem;
+    padding: 1rem;
+    border: 2px;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    border-style:groove;
+    font-size: 1rem;
+}
+.login .box-input input{
+    flex: 1;
+}
+
+.login .forget{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.login .forget label input{
+    margin-right: 1rem;
+}
+
+.login button{
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+}
+.login button:hover{
+    background-color: #CD5C5C;
+    cursor: pointer;
+}
+.box-warning{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    color: red;
+}
+
+footer{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
